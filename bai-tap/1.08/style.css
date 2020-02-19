@@ -1,0 +1,11 @@
+body {
+    background-color: #ffedca;
+}
+img {
+    float: left;
+    width: 140px;
+}
+h1 {
+    text-align: center;
+    color: #cc6600;
+}
