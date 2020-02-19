@@ -10,22 +10,41 @@
             color: rgb(249, 20, 108);
         }
         img {
+            width: 200px;
             float: left
         }
         .abc {
             background-color: rgb(249, 20, 108);
             color: #fff;
+            width: 80px;
+            display: inline-block;
         }
         p {
             margin: 0;
+        }
+        .hihi {
+            padding-left: 100px;
+        }
+        .copy {
+            color: rgb(95, 54, 116);
+        }
+        .link {
+            margin-top: 30px;
+            text-transform: capitalize;
+            color: blue;
+            font-weight: bold;
+        }
+        hr {
+            margin: 20px;
         }
     </style>
 </head>
 <body>
     <h2>Công ty Hoa tươi Nhân Ái</h2>
-    <img width="30%" src="hoa-hong.png">
+    <img src="hoa-hong.png">
         <ol>
             <li>
+                <div class="hihi">
                 <p><span class="abc">Giới thiệu</span></p>
                 <ul type="square">
                     <li>Thành lập ngày 25/05/2007</li>
@@ -33,10 +52,19 @@
                     <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
                     <li>Nhận kết giỏ hoa theo yêu cầu khách hàng</li>
                 </ul>
+                </div>
             </li>
             <hr>
             <li>
+                <div class="hihi">
                 <p><span class="abc">Liên hệ</span></p>
+                <ul>
+                    <li>Điện thoại: 84-08-8351056</li>
+                    <li>Địa chỉ: <i>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</i></li>
+                </ul>
+                </div>
             </li>
+        </ol>
+    <p class="link"><span class="copy">&copy Copyright:</span><a href="https://csc.edu.vn/">Trung tâm tin học - Địa học Khoa học Tự nhiên TPHCM</a>
 </body>
 </html>
