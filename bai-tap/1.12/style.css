@@ -1,0 +1,31 @@
+legend {
+    text-align: center;
+    color: rgb(69, 113, 33);
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px;
+}
+table, th, td {
+    border: 1px solid rgb(64, 99, 86);
+    border-collapse: collapse;
+}
+table {
+    color: rgb(69, 113, 33);
+    margin: 0 auto;
+    background-color: rgb(233, 249, 217);
+}
+table td:nth-child(2) {
+    width: 250px;
+}
+#name {
+    width: 220px;
+}
+#address {
+    width: 175px;
+}
+#dudoan {
+    width: 70px;
+}
+tfoot {
+    text-align: center;
+}

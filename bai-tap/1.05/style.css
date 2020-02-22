@@ -1,0 +1,19 @@
+p {
+    margin: 0
+}
+h2 {
+    text-align: center;
+    color: rgb(42, 129, 83)
+}
+.red {
+    color: #ff0000;
+    font-style: normal;
+}
+pre {
+    background-color: #ccc;
+    color: #0000cc
+}
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}

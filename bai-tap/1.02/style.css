@@ -1,0 +1,31 @@
+hr {
+    width: 200px;
+}
+h1 {
+    text-align: center;
+    color: #006600;
+}
+h2 {
+    color: #0000ff;
+    text-decoration: underline;
+}
+#yeucauchitiet {
+    font-weight: bold;
+}
+body div {
+    text-align: center;
+}
+#me {
+    text-transform: uppercase;
+    color: #ff3399;
+    background-color: #fecffd;
+    font-weight: bold;
+}
+#doantho {
+    font-style: italic;
+    background-color: #ffffcc;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}

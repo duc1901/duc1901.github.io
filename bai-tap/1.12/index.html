@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+    <legend>Phiếu đăng ký tham gia chương trình khuyến mãi</legend>
+        <table class="ctkm">
+            <tr>
+                <td><label for="name">Họ và tên</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+            <tr>
+                <td><label for="phonenumber">Điện thoại</label></td>
+                <td><input type="text" id="phonenumber" name="phonenumber"></td>
+            </tr>
+            <tr>
+                <td><label for="sex">Phái</label></td>
+                <td><input type="radio" id="male" name="sex" value="male">
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="sex" value="female">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr> 
+                <td><label for="job">Nghề nghiệp</label></td>
+                <td><select name="job" id="job">
+                        <option value="doctor">Bác sĩ</option>
+                        <option value="engineer">Kỹ sư</option>
+                        <option value="teacher">Giáo viên</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </td>    
+            </tr>
+            <tr>
+                <td><label for="selectproduct">Chọn sản phẩm tham gia</label></td>
+                <td>
+                    <select name="selectproduct[]" id="selectproduct" size="4" multiple>
+                        <option value="toothpaste">Kem đánh răng</option>
+                        <option value="washingpowder">Bột giặt</option>
+                        <option value="shampoo">Dầu gội đầu</option>
+                        <option value="showergel">Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dudoan">Số người dự đoán tham gia</label></td>
+                <td><input type="number" id="dudoan" name="dudoan"></td>
+            </tr>
+            <tfoot>
+            <tr>
+                <td colspan="2"><button onclick="myFunction()">Đồng ý</button></td>
+            </tr>
+            <tr id="result"></tr>
+            </tfoot>
+        </table>
+        <script>
+            function myFunction() {
+                    var name = document.getElementById("name").value
+                    var address = document.getElementById("address").value
+                    var phonenumber = document.getElementById("phonenumber").value
+                    if(name.length>0 && address.length>0 && phonenumber.length>0){
+                        document.getElementById("result").innerHTML = '<td colspan="2">Bạn đã đăng kí thành công!!!</td>';
+                    }else {
+                        alert("Vui lòng nhập đầy đủ thông tin")
+                    }            
+              return false
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1 {
+    color: #c03;
+    text-align: center;
+}
+body {
+    font-family: Tahoma;
+    font-size: 12px;
+}
+table, th, td {
+    border: 1px solid rgb(216, 124, 96);
+    border-collapse: collapse;
+}
+thead {
+    background-color: #c03;
+    color: #fff;
+}
+.hocphan {
+    color: rgb(216, 124, 96);
+}
+tbody {
+    text-align: center;
+}
+.monhoc {
+    text-align: left;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 450px;
+}

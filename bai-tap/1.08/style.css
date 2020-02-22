@@ -3,9 +3,32 @@ body {
 }
 img {
     float: left;
-    width: 140px;
+    width: 200px;
 }
 h1 {
     text-align: center;
     color: #cc6600;
+}
+table tr:nth-child(1) {
+    text-align: center;
+    background-color: #cc6600;
+    color: #fff;
+}
+table, th, td {
+    border: 1.3px solid rgb(138 , 105, 126);
+}
+table{
+    border-collapse: collapse;
+    width: 60%;
+}
+table tr:nth-child(even) {
+    background-color: #fff;
+}
+table tr td:nth-child(1){
+    text-align: center;
+    width: 40px;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
 }

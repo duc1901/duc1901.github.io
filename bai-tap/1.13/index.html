@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+    <legend>Đăng kí du lịch</legend>
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="name">Họ và tên</label></td>
+                <td><input type="text" id="name" name="name"></td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ</label></td>
+                <td><input type="text" id="address" name="address"></td>
+            </tr>
+            <tr>
+                <td><label for="phonenumber">Điện thoại</label></td>
+                <td><input type="text" id="phonenumber" name="phonenumber"></td>
+            </tr>
+            <tr>
+                <td><label for="vietnam">Khách Việt Nam</label></td>
+                <td><input type="checkbox" id="vietnam" name="vietnam"></td>
+            </tr>
+            <tr>
+                <td><label for="tour">Chọn tour</label></td>
+                <td>
+                    <select name="tour" id="tour">
+                        <optgroup label="Miền Bắc">
+                            <option value="hn-hl-sp">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="hn-ch-nb">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="hn-cb-tc">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="h-bm-dn">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="nt-dl">Nha Trang - Đà Lạt</option>
+                            <option value="bmt-gl-kt">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="hcm-ct-cm">TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option value="hcm-mt">TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="vehicles">Phương tiện</label></td>
+                <td>
+                    <input type="radio" id="planes" name="vehicles" value="planes">
+                    <label for="planes">Máy bay</label>
+                    <input type="radio" id="car" name="vehicles" value="car">
+                    <label for="car">Xe ô tô</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        <label for="adults">Người lớn</label>
+                        <input type="number" id="adults" name="adults">
+                        <label for="children">Trẻ em</label>
+                        <input type="number" id="children" name="children">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="note">Ghi chú thêm</label></td>
+                <td><textarea name="note" id="note" cols="30" rows="2"></textarea></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><button onclick="myFunction()">Đồng ý</button></td>
+            </tr>
+            <tr id="result">
+            </tr>
+        </tfoot>
+        <script>
+            function myFunction() {
+                    var name = document.getElementById("name").value
+                    var address = document.getElementById("address").value
+                    var phonenumber = document.getElementById("phonenumber").value
+                    var adults = document.getElementById("adults").value
+                    var children = document.getElementById("children").value
+                    if(name.length>0 && address.length>0 && phonenumber.length>0){
+                        document.getElementById("result").innerHTML = '<td colspan="2">Bạn đã đăng kí thành công!!!</td>';
+                    }else {
+                        alert("Vui lòng nhập đầy đủ thông tin")
+                    }            
+              return false
+            }
+        </script>
+    </table>
+</body>
+</html>

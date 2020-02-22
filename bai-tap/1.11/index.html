@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tạo form và các điều khiển trên form</title>
+</head>
+<body>
+    <!-- <form action="" id=""> -->
+        <legend>Đăng nhập</legend>
+        <table>
+            <tr>
+                <td><label for="user">Mã người dùng</label></td>
+                <td><input type="text" id="user" name="user"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Mật khẩu</label></td>
+                <td><input type="password" id="pass" name="pass"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <button onclick="myFunction()">Đồng ý</button>
+                </td>
+            </tr>
+            <tr id="result">
+
+            </tr>
+        </table>
+    <!-- </form> -->
+    <script>
+        function myFunction() {
+                var user=document.getElementById("user").value
+                if(user.length>0){
+                    document.getElementById("result").innerHTML = '<td colspan="2">'+user+'</td>';
+                }            
+          return false
+        }
+    </script>
+</body>
+</html>

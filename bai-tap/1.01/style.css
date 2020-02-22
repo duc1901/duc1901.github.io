@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}
+h2 {
+    text-decoration: underline;
+}
+p {
+    text-align: center;
+}
+#yeucau {
+    text-align: left;
+    font-weight: bold;
+}

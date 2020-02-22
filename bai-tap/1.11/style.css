@@ -1,0 +1,19 @@
+table, th, td {
+    border: 1px solid rgb(145, 54, 83);
+    border-collapse: collapse;
+    background-color: rgb(205, 237, 254);
+}
+legend {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    color: rgb(185, 103, 55);
+    font-weight: bold;
+}
+table {
+    margin: 0 auto;
+}
+#result {
+    text-align: center;
+    color: blue;
+}

@@ -1,0 +1,30 @@
+h2 {
+    text-transform: uppercase;
+    color: rgb(222, 118, 47);
+    border: double;
+    text-align: center;
+}
+.chu-cai-dau {
+    font-size: 50px;
+    font-family: Big Caslon;
+    color: #95080c;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#TH {
+    background-color: rgb(252, 103, 33);
+    color: #fff;
+    text-align: right;
+    font-size: 20px;
+}
+.Doan2 {
+    text-align: right;
+}
+.chu-do {
+    font-weight: bold;
+    color: rgb(149, 8, 12);
+}
+#wrapper {
+    margin: 0 auto;
+    width: 600px;
+}
