@@ -8,9 +8,11 @@ h1 {
 h2 {
     color: #0000ff;
     text-decoration: underline;
+    text-align: left;
 }
 #yeucauchitiet {
     font-weight: bold;
+    text-align: left;
 }
 body div {
     text-align: center;
