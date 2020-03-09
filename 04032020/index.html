@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Tạo bảng, trộn dòng và cột</title>
+</head>
+<body>
+    <div id="wrapper">
+    <h1>Chương trình học - ngành lập trình</h1>
+    <table>
+        <thead>
+        <tr>
+            <th rowspan="2">Nhóm học phần</th>
+            <th rowspan="2">Môn học</th>
+            <th colspan="2">Số tiết</th>
+        </tr>
+        <tr>
+            <th>Lý thuyết</th>
+            <th>Thực hành</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="6" class="hocphan">I<br>Tin học văn phòng</td>
+            <td class="monhoc">Hệ điều hành Windows</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Sử dụng Internet</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Soạn thảo văn bản với MS Word</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Tạo bài trình diến với MS PowerPoint</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Xử lý số liệu với MS Exel</td>
+            <td>24</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Tạo trang Web với MS FrontPage</td>
+            <td>9</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td rowspan="2" class="hocphan">II<br>Kỹ thuật lập trình (VB.NET)</td>
+            <td class="monhoc">Nhập môn lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td class="monhoc">Kỹ thuật lập trình</td>
+            <td>36</td>
+            <td>60</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="4">...</td>
+        </tr>
+        </tfoot>
+    </table>
+    <br>
+    <fieldset>
+        <legend>Login Form</legend>
+    <form action="server.js" method="POST|GET">
+        <label for="">Username:</label>
+        <input type="text" name="username">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="password" name="password">
+        <br><br>
+        <input type="checkbox" id="remember">
+        <label for="remember">Nhớ phiên đăng nhập</label>
+        <br><br>
+        <label for="male">Nam</label>
+        <input type="radio" id="male" name="sex">
+        <label for="female">Nữ</label>
+        <input type="radio" id="female" name="sex">
+        <select name="students" id="students">
+            <optgroup label="Nữ">
+                <option value="T3HS1">Huyền</option>
+                <option value="T3HS3">Thương</option>
+            </optgroup>
+            <optgroup label="Nam">
+                <option value="T3HS4">Toan</option>
+            </optgroup>
+        </select>
+        <label for="date-of-birth">Ngày sinh</label>
+        <input type="date" id="date-of-birth">
+        <br>
+        <label for="height">Chiều cao</label>
+        <input type="number" id="height" min="0" max="2">
+        <input type="color">
+        <br><br>
+        <input type="submit" value="Xác nhận" onclick="onSubmit()">
+        <p id="show-confirm" style="display: none;">Bạn đã đăng nhập thành công</p>
+    </form>
+    <script>
+        function onSubmit() {
+            event.preventDefault();
+            document.getElementById("show-c")
+        }
+    </script>
+    </fieldset>
+    </div>
+</body>
+</html>
