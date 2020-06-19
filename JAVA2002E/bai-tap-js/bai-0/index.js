@@ -1,24 +1,25 @@
-function test_prime() {
-    var n, flag;
-    n = document.myform.n.value
-    if (n===1) {
-        flag = false;
-    } else if(n === 2) {
-        flag = true;
-    } else {
-        for (var i = 2; i < n; i++) {
-            if(n % i === 0) {
-                flag = false;
+function isPrime(num) {
+    if (num === 2) {
+      return true;
+    }
+    else if(num > 1){
+        for (var i = 2;  i < num; i++) {
+            if (num % i !== 0 ) {
+                return true;
+            } else if (num === i * i) {
+                return false
+            } else {
+                return false;
             }
         }
-    flag = true;
-    }
-    if (flag == true) {
-        document.getElementById("result").innerHTML = n + " is Prime";
-    } else if (flag == false) {
-        document.getElementById("result").innerHTML = n + " is not Prime";
+    } else {
+      return false;
     }
 }
 
+do {
+    interNum = parseInt(prompt("Enter number:"))
+    n = Number(interNum);
+} while (Number.isNaN(n))
 
-
+document.write(isPrime(n))
