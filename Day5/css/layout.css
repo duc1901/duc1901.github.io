@@ -1,0 +1,63 @@
+body, ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: cadetblue;
+}
+
+nav {
+    background-color: yellow;
+}
+
+section {
+    background-color: green;
+}
+
+.heading {
+    margin: 0px;
+}
+
+aside {
+    background-color: orange;
+}
+
+article {
+    background-color: red;
+}
+
+footer {
+    background-color: darkkhaki;
+}
+
+/* layout
+aside {
+    width: 20%;
+    float: left;
+}
+
+article {
+    width: 70%;
+    float: right;
+}
+footer {
+    clear: both;
+} */
+
+.block {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    /* margin: auto; */
+}
+
+/* .block__transform {
+    transform: scale(10, 10);
+} */
+
+.block__transform {
+    position: relative;
+    left: 100px;
+    bottom: 100px;
+}

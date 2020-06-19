@@ -1,0 +1,66 @@
+/* * {
+    padding: 0;
+} */
+@font-face {
+    font-family: UTMCafetaRegular;
+    src: url(./UTM\ Cafeta.ttf);
+}
+
+ul, li, body {
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    background-color: rgb(50, 48, 49);
+    height: 43px;
+}
+.menu .list-item {
+    text-align: center;
+}
+.menu .list-item .item {
+    display: inline-block;
+    padding: 11px;
+}
+.menu .list-item .item:hover a {
+    color: #dacb46;
+}
+.menu .list-item .item:hover {
+    background-color: #292929;
+    height: 20px;
+}
+.menu .list-item .item a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: UTMCafetaRegular;
+}
+.menu .list-item .item .sub-menu a {
+    font-family: unset;
+    text-transform: none;
+}
+/* sub menu */
+.menu .list-item .item {
+    position: relative;
+}
+.menu .list-item .item .sub-menu {
+    display: block;
+}
+.menu .list-item .item .sub-menu {
+    left: 0;
+    top: 42px;
+    position: absolute;
+    display: none;
+}
+.sub-menu .sub-list {
+    text-align: start;
+}
+
+.sub-menu .sub-list .sub-item {
+    list-style-type: none;
+}
+
+.sub-menu {
+    background-color: #323031;
+    width: 200px;
+}
