@@ -5,7 +5,7 @@ do {
     n = Number(interNum);
 } while (Number.isNaN(n)) {
     for ( i = 1; i <= n; i++) {
-            document.write(i + " ")
+        document.write(i + " ")
     }
 }
 
