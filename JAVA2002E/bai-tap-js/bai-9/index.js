@@ -1,12 +1,12 @@
 do {
     var input = prompt("Enter number ?", "123676321");
     n = Number(input);
-} while(Number.isNaN(n) && n < 0)
+} while(Number.isNaN(n) || n < 0)
 
-var y = 0;
-while ( x > 0 ) {
-    x = Math.floor(x/10);
-    y = y*10 + x;
+var a = 0;
+while ( n > 0 ) {
+    n = Math.floor(n/10);
+    a = a*10 + n;
 }
-    if(x == y) document.write("Yes");
-    else document.write("No");
+    if(n == a) {document.write("Yes")}
+    else {document.write("No")}
