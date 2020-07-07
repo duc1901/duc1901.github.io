@@ -11,10 +11,10 @@ public class BaiTapLs3_1 {
 	
 	public static void insertElement(int[] array) {
 		int position = 2;     
-		for(int i = array.length-1; i > position; i--) {
-			array[i] = array[i-1];
+		for(int i = array.length - 1; i > position; i--) {
+			array[i] = array[i - 1];
 		}
 		array[position] = 100;
-		System.out.println("new array: "+Arrays.toString(array));
+		System.out.println("new array: " + Arrays.toString(array));
 	}
 }
