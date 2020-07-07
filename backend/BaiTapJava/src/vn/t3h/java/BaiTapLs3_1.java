@@ -18,7 +18,7 @@ public class BaiTapLs3_1 {
 			array[i] = array[i - 1];
 		}
 		array[position] = 100;
-		System.out.println("new array: " + Arrays.toString(array));
+		System.out.println("new array = " + Arrays.toString(array));
 	}
 	
 	public static void removeDuplicateElement(int[] array) {
@@ -26,6 +26,6 @@ public class BaiTapLs3_1 {
 		for (int num : array) {
 		    set.add(num);
 		}
-		System.out.println(set);
+		System.out.println("new array = " + set);
 	}
 }
