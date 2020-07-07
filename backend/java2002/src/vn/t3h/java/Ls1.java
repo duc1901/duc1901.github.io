@@ -17,13 +17,4 @@ public class Ls1 {
 //	public int tinhTong(int a, int b) {
 //		return a + b;
 //	}
-	
-    public static void printStars(final int n) {
-        for (int i = 0; i < n; ++i) {
-            for (int j = 0; j <= i; ++j) {
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
-    }
 }
