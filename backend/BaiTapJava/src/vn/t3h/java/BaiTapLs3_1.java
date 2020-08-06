@@ -9,10 +9,10 @@ public class BaiTapLs3_1 {
 		System.out.println("a) ");
 		insertElement(array);
 		System.out.println("b) ");
-		removeDuplicateElement(array);
+		removeDuplicateElement(array, array.length);
 	}
-	
-	public static void insertElement(int[] array) {
+		
+	private static void insertElement(int[] array) {
 		int position = 2;     
 		for(int i = array.length - 1; i > position; i--) {
 			array[i] = array[i - 1];
@@ -21,11 +21,24 @@ public class BaiTapLs3_1 {
 		System.out.println("new array = " + Arrays.toString(array));
 	}
 	
-	public static void removeDuplicateElement(int[] array) {
-		HashSet<Integer> set = new HashSet<Integer>();
-		for (int num : array) {
-		    set.add(num);
+	private static int removeDuplicateElement(int[] array, int length ) {
+//		HashSet<Integer> set = new HashSet<Integer>();
+//		for (int num : array) {
+//		    set.add(num);
+//		}
+//		System.out.println("new array = " + set);
+		if(array.length == 0 || array.length == 1) {
+			return 0;
 		}
-		System.out.println("new array = " + set);
+		int j = 0;
+		int[] tam = new int[length];
+		for(int i = 0; i < length -1; i++) {
+			if(array[i] != array[i+1]) {
+				tam[j++] = array[i];
+			}
+		}
+		tam[j++] = array[length-1];
+		System.out.println(Arrays.toString(tam));
+		return j;
 	}
 }

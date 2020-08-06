@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<th:block layout:insert="~{fragments/htmlhead}" />
+	<body>
+		<th:block layout:replace="~{fragments/header}" />
+		<th:block layout:fragment="content" />
+		<th:block layout:replace="~{fragments/footer}" />
+		<th:block layout:replace="~{fragments/body_scripts :: end}" />
+	</body>
+</html>
